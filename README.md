@@ -1,9 +1,6 @@
 # ModelViewer
-A simple model viewer in Java created from scratch.
-It uses software rendering and is able to load simple .obj models (faces need to be triangulated).
+Simple 3d model viewer written in Java. Uses software rendering and is capable of loading fairly simple Wavefront models where all faces are triangles.
 
-Controls:
-- UP,DOWN: Rotate in the x-axis
-- LEFT,RIGHT: Rotate in the y-axis
-- -,=: Scale
-- 1,2,3: Change render mode
+### Controls
+- Arrow Keys: Rotate in the X and Y axis.
+- Minus(-) and Equals(=): Scale

@@ -63,25 +63,25 @@ public class Main
 		if (Keyboard.isKeyDown(Keyboard.KEY_UP))
 		{
 			rotation.setX(rotation.getX() + rotSpeed * dt);
-			if (rotation.getY() > 360) rotation.setY(rotation.getY() - 360);
+			if (rotation.getX() > 360) rotation.setY(rotation.getX() - 360);
 			updateTransformMatrix();
 		}
 		if (Keyboard.isKeyDown(Keyboard.KEY_LEFT))
 		{
-			rotation.setY(rotation.getY() + rotSpeed * dt);
-			if (rotation.getZ() > 360) rotation.setZ(rotation.getZ() - 360);
+			rotation.setY(rotation.getY() - rotSpeed * dt);
+			if (rotation.getY() > 360) rotation.setY(rotation.getY() - 360);
 			updateTransformMatrix();
 		}
 		if (Keyboard.isKeyDown(Keyboard.KEY_DOWN))
 		{
 			rotation.setX(rotation.getX() - rotSpeed * dt);
-			if (rotation.getY() < 0) rotation.setY(rotation.getY() + 360);
+			if (rotation.getX() < 0) rotation.setY(rotation.getX() + 360);
 			updateTransformMatrix();
 		}
 		if (Keyboard.isKeyDown(Keyboard.KEY_RIGHT))
 		{
-			rotation.setY(rotation.getY() - rotSpeed * dt);
-			if (rotation.getZ() < 0) rotation.setZ(rotation.getZ() + 360);
+			rotation.setY(rotation.getY() + rotSpeed * dt);
+			if (rotation.getY() < 0) rotation.setY(rotation.getY() + 360);
 			updateTransformMatrix();
 		}
 		if (Keyboard.isKeyDown(Keyboard.KEY_EQUALS))
