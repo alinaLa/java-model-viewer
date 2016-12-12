@@ -63,7 +63,7 @@ public class Main
 		if (Keyboard.isKeyDown(Keyboard.KEY_UP))
 		{
 			rotation.setX(rotation.getX() + rotSpeed * dt);
-			if (rotation.getX() > 360) rotation.setY(rotation.getX() - 360);
+			if (rotation.getX() > 360) rotation.setX(rotation.getX() - 360);
 			updateTransformMatrix();
 		}
 		if (Keyboard.isKeyDown(Keyboard.KEY_LEFT))
@@ -75,7 +75,7 @@ public class Main
 		if (Keyboard.isKeyDown(Keyboard.KEY_DOWN))
 		{
 			rotation.setX(rotation.getX() - rotSpeed * dt);
-			if (rotation.getX() < 0) rotation.setY(rotation.getX() + 360);
+			if (rotation.getX() < 0) rotation.setX(rotation.getX() + 360);
 			updateTransformMatrix();
 		}
 		if (Keyboard.isKeyDown(Keyboard.KEY_RIGHT))
